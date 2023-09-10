@@ -7,7 +7,7 @@ class atools():
     self.doc = doc
   def append(self, userinput):
     self.userinput = userinput
-    out_file = open(self.doc, "w")
+    out_file = open(self.doc, "a")
     json.dump(userinput, out_file, indent = 6)
   def get(self, line = 1):
     in_file = open(self.doc)
